@@ -1,3 +1,4 @@
+
 # AI Resume Matcher
 
 This **Streamlit** web app recommends the most relevant candidates for a given job description.
@@ -65,3 +66,39 @@ The OpenAI API key is stored securely in **Streamlit Secrets**.
    ```
 
 ---
+
+## Running Locally
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/ai-resume-matcher.git
+   cd ai-resume-matcher
+   ```
+
+2. **Create a virtual environment** 
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # macOS/Linux  
+   venv\Scripts\activate      # Windows
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   pip install ...
+   ```
+
+4. **Add your OpenAI API key**
+
+   * Create `.streamlit/secrets.toml` as described above.
+
+5. **Run the app**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+6. **Open the browser link** (Streamlit will print it in your terminal, e.g., `http://localhost:8501`).
+
