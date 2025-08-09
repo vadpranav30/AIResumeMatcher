@@ -1,5 +1,3 @@
-
-
 # AI Resume Matcher
 
 This **Streamlit** web app recommends the most relevant candidates for a given job description.
@@ -35,6 +33,25 @@ The app then uses **OpenAI’s GPT model** to generate a concise AI-written summ
 
 ---
 
+## Dependencies
+
+Install these dependencies before running the app:
+
+```bash
+pip install streamlit pandas numpy sentence-transformers scikit-learn PyMuPDF docx2txt openai
+```
+
+* **streamlit** – Creates the interactive web app interface.
+* **pandas** – Handles data tables for candidates and scores.
+* **numpy** – Performs numerical operations, e.g., sorting similarity scores.
+* **sentence-transformers** – Generates embeddings using `all-MiniLM-L6-v2`.
+* **scikit-learn** – Calculates cosine similarity between embeddings.
+* **PyMuPDF (fitz)** – Extracts text from PDF resumes.
+* **docx2txt** – Extracts text from `.docx` resumes.
+* **openai** – Calls OpenAI’s API to generate candidate fit summaries.
+
+---
+
 ## API Key Setup
 
 The OpenAI API key is stored securely in **Streamlit Secrets**.
@@ -48,4 +65,3 @@ The OpenAI API key is stored securely in **Streamlit Secrets**.
    ```
 
 ---
-
