@@ -1,8 +1,19 @@
-streamlit
-pandas
-numpy
-sentence-transformers
-scikit-learn
-PyMuPDF
-docx2txt
-openai
+# Core
+streamlit==1.37.1
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+
+# Files
+PyMuPDF==1.24.9         
+docx2txt==0.8
+
+# OpenAI
+openai>=1.30.0
+
+# Embeddings stack
+sentence-transformers==2.7.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
